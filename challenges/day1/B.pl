@@ -1,5 +1,5 @@
 #!swipl -q
-:- initialization input(X), solution(X,S), writeln(S), halt(0).
+:- initialization input(X), time(solution(X,S)), writeln(S), halt(0).
 
 appears_times([H|T], H, S) :- appears_times(T, H, S1), S is S1+1.
 appears_times([_|T], E, S) :- appears_times(T, E, S).

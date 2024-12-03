@@ -1,5 +1,5 @@
 #!swipl -q
-:-initialization input(X), solution(X, S), writeln(S), halt(0).
+:-initialization input(X), time(solution(X, S)), writeln(S), halt(0).
 
 diff_list([H1|T1], [H2|T2], S) :- diff(H1, H2, Z), diff_list(T1, T2, Q), S is Z+Q.
 diff_list([], [], 0).

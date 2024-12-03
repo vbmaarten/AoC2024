@@ -1,5 +1,5 @@
 #!swipl -q
-:- initialization [input], input(X), amount_safe(X, N), writeln(N), halt(0).
+:- initialization [input], input(X), time(amount_safe(X, N)), writeln(N), halt(0).
 
 safe(L) :- safe_increasing(L).
 safe(L) :- safe_decreasing(L).
