@@ -4,3 +4,4 @@ read_file(File, Str) :-
        close(In)).
 
 input(X) :- read_file("./input.txt", X). 
+input_test(X) :- read_file("./input_test.txt", X). 
